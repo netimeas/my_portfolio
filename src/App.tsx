@@ -17,26 +17,24 @@ const App: React.FC = () => {
     {
       id: 1,
       title: '동아리방 예약',
-      description: '동아리방을 편리하게 예약할 수 있는 웹 애플리케이션입니다.',
+      description: `동아리방을 편리하게 예약할 수 있는 웹 애플리케이션입니다.`, // 템플릿 리터럴로 변경
       liveUrl: 'bit.ly/동아리방예약',
       githubUrl: 'https://github.com/netimeas/clubroom1.git',
     },
     {
       id: 2,
       title: '주제별 성경 암송',
-      description: '주제별로 성경 구절을 암송하고 학습할 수 있도록 돕는 웹사이트입니다.',
+      description: `주제별로 성경 구절을 암송하고 학습할 수 있도록 돕는 웹사이트입니다.`, // 템플릿 리터럴로 변경
       liveUrl: 'bit.ly/주제별성경암송',
       githubUrl: 'https://github.com/netimeas/memowords.git',
     },
-    // 여기에 새로운 프로젝트를 추가할 수 있습니다.
-    // 예시:
-    // {
-    //   id: 3,
-    //   title: '새로운 프로젝트',
-    //   description: '이것은 새로운 프로젝트에 대한 설명입니다.',
-    //   liveUrl: 'https://새로운프로젝트.com',
-    //   githubUrl: 'https://github.com/your-username/new-project.git',
-    // },
+    {
+      id: 3,
+      title: '포트폴리오 웹사이트',
+      description: `개발한 프로젝트들을 소개하기 위해 직접 제작한 개인 포트폴리오 웹사이트입니다.`, // 템플릿 리터럴로 변경
+      liveUrl: 'bit.ly/재순포트폴리오',
+      githubUrl: 'https://github.com/netimeas/my_portfolio.git',
+    },
   ];
 
   return (
