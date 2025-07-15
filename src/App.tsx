@@ -73,6 +73,41 @@ const App: React.FC = () => {
             ))}
           </div>
         </section>
+
+        {/* 새로운 연락처 섹션 추가 */}
+        <section className="contact-section">
+          {/* <h2>연락처</h2> */} {/* '연락처' 제목이 삭제되었습니다. */}
+          {/* <p>더 자세한 정보나 협업 문의는 아래를 통해 연락 주세요!</p> */}
+          <div className="contact-links">
+            <a
+              href="https://www.instagram.com/quova._/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="instagram-link"
+            >
+              {/* 인스타그램 아이콘 SVG 추가 */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-instagram"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              quova._ {/* 인스타그램 아이디 텍스트 유지 */}
+            </a>
+            {/* 다른 연락처 정보 (이메일, 링크드인 등)를 여기에 추가할 수 있습니다. */}
+            {/* <a href="mailto:your.email@example.com" className="email-link">이메일: your.email@example.com</a> */}
+          </div>
+        </section>
       </main>
       {/* 푸터 영역이 삭제되었습니다. */}
     </div>
