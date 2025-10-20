@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .App {
   text-align: center;
 }
@@ -36,3 +37,310 @@
     transform: rotate(360deg);
   }
 }
+=======
+/* 기본 스타일 초기화 */
+html {
+  box-sizing: border-box;
+  /* 모든 요소에 box-sizing 적용 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  /* 모든 요소에 box-sizing 상속 */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  /* Inter 폰트 사용 권장 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* 전체 앱 컨테이너 스타일 */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 헤더 스타일 */
+.App-header {
+  background-color: #282c34;
+  padding: 40px 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.App-header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* 메인 컨텐츠 영역 스타일 */
+.App-main {
+  flex-grow: 1;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* 프로젝트 섹션 스타일 */
+.projects-section {
+  margin-top: 30px;
+}
+
+.projects-section h2 {
+  font-size: 2.5em;
+  color: #282c34;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.projects-section h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background-color: #61dafb;
+  border-radius: 2px;
+}
+
+/* 프로젝트 카드 그리드 스타일 */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* 반응형 그리드 */
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  /* 카드 높이를 동일하게 */
+}
+
+/* 개별 프로젝트 카드 스타일 */
+.project-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 25px;
+  flex-grow: 1;
+  /* 설명이 긴 카드의 높이를 맞춤 */
+  word-wrap: break-word;
+  /* 긴 단어나 URL 강제 줄바꿈 */
+  overflow-wrap: break-word;
+  /* 최신 버전 */
+}
+
+/* 프로젝트 링크 컨테이너 */
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: auto;
+  /* 하단 정렬 */
+}
+
+/* 라이브 링크 스타일 */
+.live-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  display: inline-block;
+  /* 버튼처럼 보이게 */
+}
+
+.live-link:hover {
+  color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* GitHub 버튼 스타일 */
+.github-button {
+  background-color: #282c34;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.github-button:hover {
+  background-color: #444b58;
+  transform: translateY(-2px);
+}
+
+.github-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 연락처 섹션 스타일 */
+.contact-section {
+  margin-top: 60px;
+  /* 프로젝트 섹션과의 간격 */
+  padding: 40px 20px;
+  background-color: #e0e7eb;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-section h2 {
+  font-size: 2.5em;
+  color: #282c34;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-section h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background-color: #61dafb;
+  border-radius: 2px;
+}
+
+.contact-section p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* 모바일에서 줄바꿈 */
+}
+
+.instagram-link {
+  background-color: #E1306C;
+  /* Instagram 브랜드 색상 */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  /* 아이콘과 텍스트 정렬을 위해 */
+  align-items: center;
+  gap: 8px;
+  /* 아이콘과 텍스트 사이 간격 */
+}
+
+.instagram-link:hover {
+  background-color: #C13584;
+  transform: translateY(-2px);
+}
+
+.instagram-link:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 미디어 쿼리 - 모바일 반응형 */
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 2.5em;
+  }
+
+  .App-header p {
+    font-size: 1em;
+  }
+
+  .projects-section h2,
+  .contact-section h2 {
+    font-size: 2em;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    font-size: 1.5em;
+  }
+
+  .project-card p {
+    font-size: 1em;
+  }
+
+  .live-link,
+  .github-button,
+  .instagram-link {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    /* 모바일에서는 한 줄에 하나씩 */
+  }
+
+  .App-header {
+    padding: 30px 15px;
+  }
+
+  .App-main {
+    padding: 30px 15px;
+  }
+}
+>>>>>>> d66cb8096efa3ebcfca593c1f57ecf90f422ca6f
